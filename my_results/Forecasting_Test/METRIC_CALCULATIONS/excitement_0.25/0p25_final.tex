@@ -1,0 +1,106 @@
+% Final Results Tables - Excitement Level 0.25
+% Generated automatically
+
+% Table 1: Overall Performance
+\begin{table}[htbp]
+\centering
+\caption{Overall Performance Metrics (Excitement = 0.25)}
+\label{tab:overall_0p25}
+\begin{tabular}{lcccccccc}
+\toprule
+Model & Data Tag & Runtime & RMSE & RMSE & MAE & MAE & RMSE/ \\
+      &          & (sec)   & (mean) & (std) & (mean) & (std) & MAE \\
+\midrule
+BVAR Lag 5 & 0;100;0(100) & 16165.32 & 2.38321 & 1.23815 & 2.03291 & 1.11624 & 1.17231 \\
+Model 16 & na & 1826.41 & 3.32101 & 1.99854 & 3.10156 & 2.03724 & 1.07075 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 2: Coverage Metrics
+\begin{table}[htbp]
+\centering
+\caption{Prediction Interval Coverage Rates (Excitement = 0.25)}
+\label{tab:coverage_0p25}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{BVAR Lag 5} & \multicolumn{2}{c}{Model 16} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Mean & SD & Mean & SD \\
+\midrule
+\multicolumn{5}{l}{\textit{Coverage 80\%}} \\
+Variable 1 & 0.79800 & 0.24941 & 0.95889 & 0.14782 \\
+Variable 2 & 0.79842 & 0.23019 & 0.98641 & 0.04555 \\
+Variable 3 & 0.82018 & 0.21368 & 0.98196 & 0.08409 \\
+\multicolumn{5}{l}{\textit{Coverage 90\%}} \\
+Variable 1 & 0.90218 & 0.17212 & 0.98600 & 0.06767 \\
+Variable 2 & 0.90413 & 0.17875 & 0.99911 & 0.00409 \\
+Variable 3 & 0.91880 & 0.15635 & 0.99734 & 0.01622 \\
+\multicolumn{5}{l}{\textit{Coverage 95\%}} \\
+Variable 1 & 0.95599 & 0.10881 & 0.99478 & 0.03059 \\
+Variable 2 & 0.95477 & 0.13219 & 0.99994 & 0.00035 \\
+Variable 3 & 0.96220 & 0.11671 & 0.99969 & 0.00199 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 3: Width Metrics
+\begin{table}[htbp]
+\centering
+\caption{Prediction Interval Widths (Excitement = 0.25)}
+\label{tab:width_0p25}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{BVAR Lag 5} & \multicolumn{2}{c}{Model 16} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Mean & SD & Mean & SD \\
+\midrule
+\multicolumn{5}{l}{\textit{Width 80\%}} \\
+Variable 1 & 6.59724 & 0.33923 & 18.41841 & 1.65452 \\
+Variable 2 & 6.57931 & 0.35699 & 18.31516 & 1.69149 \\
+Variable 3 & 6.51717 & 0.30856 & 18.20723 & 1.68737 \\
+\multicolumn{5}{l}{\textit{Width 90\%}} \\
+Variable 1 & 8.47484 & 0.43567 & 23.35376 & 2.09313 \\
+Variable 2 & 8.44876 & 0.45609 & 23.21735 & 2.13221 \\
+Variable 3 & 8.36792 & 0.39992 & 23.08502 & 2.13667 \\
+\multicolumn{5}{l}{\textit{Width 95\%}} \\
+Variable 1 & 10.10192 & 0.51838 & 27.38825 & 2.45698 \\
+Variable 2 & 10.07030 & 0.54938 & 27.22826 & 2.49889 \\
+Variable 3 & 9.97950 & 0.48020 & 27.07317 & 2.50494 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 4: RMSE Metrics
+\begin{table}[htbp]
+\centering
+\caption{Root Mean Squared Error by Variable (Excitement = 0.25)}
+\label{tab:rmse_0p25}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{RMSE (mean)} & \multicolumn{3}{c}{RMSE (std)} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+ & Var 1 & Var 2 & Var 3 & Var 1 & Var 2 & Var 3 \\
+\midrule
+BVAR Lag 5 & 2.41610 & 2.45181 & 2.28174 & 1.24846 & 1.32814 & 1.13787 \\
+Model 16 & 3.55403 & 3.08003 & 3.32896 & 2.24748 & 1.87671 & 1.87143 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Table 5: MAE Metrics
+\begin{table}[htbp]
+\centering
+\caption{Mean Absolute Error by Variable (Excitement = 0.25)}
+\label{tab:mae_0p25}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{MAE (mean)} & \multicolumn{3}{c}{MAE (std)} \\
+\cmidrule(lr){2-4} \cmidrule(lr){5-7}
+ & Var 1 & Var 2 & Var 3 & Var 1 & Var 2 & Var 3 \\
+\midrule
+BVAR Lag 5 & 2.05877 & 2.08867 & 1.95131 & 1.13529 & 1.18550 & 1.02793 \\
+Model 16 & 3.34248 & 2.84693 & 3.11528 & 2.28424 & 1.91160 & 1.91587 \\
+\bottomrule
+\end{tabular}
+\end{table}

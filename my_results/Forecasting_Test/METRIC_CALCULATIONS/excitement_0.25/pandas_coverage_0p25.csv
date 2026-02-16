@@ -1,0 +1,3 @@
+model_name,Coverage80_var1_mean,Coverage80_var1_std,Coverage80_var2_mean,Coverage80_var2_std,Coverage80_var3_mean,Coverage80_var3_std,Coverage90_var1_mean,Coverage90_var1_std,Coverage90_var2_mean,Coverage90_var2_std,Coverage90_var3_mean,Coverage90_var3_std,Coverage95_var1_mean,Coverage95_var1_std,Coverage95_var2_mean,Coverage95_var2_std,Coverage95_var3_mean,Coverage95_var3_std
+BVAR_Lag_5,0.798,0.24941445,0.798416,0.23019236,0.820176,0.21367998,0.902184,0.17212385,0.904128,0.17875441,0.9188,0.15635317,0.955992,0.10880983,0.954768,0.1321913,0.9622,0.11671354
+Model_16,0.958888,0.14782056,0.986408,0.04554666,0.98196,0.08408899,0.986,0.06767017,0.999112,0.00409013,0.997336,0.01622192,0.994776,0.03058962,0.999936,0.00035377,0.999688,0.00198872

@@ -1,0 +1,1205 @@
+==========================================
+BVAR Training Pipeline
+==========================================
+Configuration:
+  Lags:   7
+  Plots:  true
+==========================================
+Results will be saved to: RESULTS/
+
+Found 15 datasets to process
+
+[1/15] Processing: excitement_0.25/d1.csv
+  → Output: RESULTS/excitement_0.25_d1.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.25/d1.csv
+Output: RESULTS/excitement_0.25_d1.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.3920 ✗
+    Var 2: ADF p=0.0041 ✓
+    Var 3: ADF p=0.5229 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.379     15        27.44     0:01:49   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.419     15        30.41     0:01:38   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.318     15        31.24     0:01:36   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.315     15        27.71     0:01:48   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 109 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -25547.42
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.25_d1.csv...
+Total runtime: 192.06 seconds (3.20 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.25_d1_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    192.06s (3.20min)
+  DIC:        -25547.42
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[2/15] Processing: excitement_0.25/d2.csv
+  → Output: RESULTS/excitement_0.25_d2.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.25/d2.csv
+Output: RESULTS/excitement_0.25_d2.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.0417 ✓
+    Var 2: ADF p=0.0744 ✗
+    Var 3: ADF p=0.3444 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.359     15        33.75     0:01:28   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.401     7         27.80     0:01:47   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.376     15        31.36     0:01:35   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.374     15        34.75     0:01:26   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 108 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -26344.75
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.25_d2.csv...
+Total runtime: 188.69 seconds (3.14 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.25_d2_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    188.69s (3.14min)
+  DIC:        -26344.75
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[3/15] Processing: excitement_0.25/d3.csv
+  → Output: RESULTS/excitement_0.25_d3.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.25/d3.csv
+Output: RESULTS/excitement_0.25_d3.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.2224 ✗
+    Var 2: ADF p=0.0588 ✗
+    Var 3: ADF p=0.1372 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.404     15        31.82     0:01:34   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.429     15        32.99     0:01:30   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.326     15        34.05     0:01:28   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.343     15        30.93     0:01:36   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 97 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -25815.37
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.25_d3.csv...
+Total runtime: 178.63 seconds (2.98 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.25_d3_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    178.63s (2.98min)
+  DIC:        -25815.37
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[4/15] Processing: excitement_0.25/d4.csv
+  → Output: RESULTS/excitement_0.25_d4.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.25/d4.csv
+Output: RESULTS/excitement_0.25_d4.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.6640 ✗
+    Var 2: ADF p=0.2751 ✗
+    Var 3: ADF p=0.5075 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.329     15        34.84     0:01:26   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.353     15        29.51     0:01:41   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.333     15        30.34     0:01:38   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.366     15        30.14     0:01:39   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 102 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -26971.30
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.25_d4.csv...
+Total runtime: 193.68 seconds (3.23 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.25_d4_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    193.68s (3.23min)
+  DIC:        -26971.30
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[5/15] Processing: excitement_0.25/d5.csv
+  → Output: RESULTS/excitement_0.25_d5.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.25/d5.csv
+Output: RESULTS/excitement_0.25_d5.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.4269 ✗
+    Var 2: ADF p=0.0714 ✗
+    Var 3: ADF p=0.9116 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.374     15        34.17     0:01:27   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.367     15        35.19     0:01:25   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.342     15        35.94     0:01:23   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.378     15        31.28     0:01:35   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 96 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -27027.67
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.25_d5.csv...
+Total runtime: 187.56 seconds (3.13 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.25_d5_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    187.56s (3.13min)
+  DIC:        -27027.67
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[6/15] Processing: excitement_0.50/d1.csv
+  → Output: RESULTS/excitement_0.50_d1.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.50/d1.csv
+Output: RESULTS/excitement_0.50_d1.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.8066 ✗
+    Var 2: ADF p=0.9854 ✗
+    Var 3: ADF p=0.0374 ✓
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.344     15        34.72     0:01:26   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.347     15        35.07     0:01:25   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.370     15        32.15     0:01:33   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.381     15        32.48     0:01:32   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 93 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -29678.62
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.50_d1.csv...
+Total runtime: 192.07 seconds (3.20 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.50_d1_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    192.07s (3.20min)
+  DIC:        -29678.62
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[7/15] Processing: excitement_0.50/d2.csv
+  → Output: RESULTS/excitement_0.50_d2.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.50/d2.csv
+Output: RESULTS/excitement_0.50_d2.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.7685 ✗
+    Var 2: ADF p=0.5942 ✗
+    Var 3: ADF p=0.3507 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.333     15        36.19     0:01:22   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.415     15        35.22     0:01:25   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.292     15        35.48     0:01:24   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.326     15        35.92     0:01:23   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 85 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -27639.93
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.50_d2.csv...
+Total runtime: 183.12 seconds (3.05 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.50_d2_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    183.12s (3.05min)
+  DIC:        -27639.93
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[8/15] Processing: excitement_0.50/d3.csv
+  → Output: RESULTS/excitement_0.50_d3.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.50/d3.csv
+Output: RESULTS/excitement_0.50_d3.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.3511 ✗
+    Var 2: ADF p=0.6150 ✗
+    Var 3: ADF p=0.1896 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.372     15        35.14     0:01:25   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.355     15        35.86     0:01:23   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.299     15        36.89     0:01:21   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.349     15        37.26     0:01:20   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 85 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -28762.46
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.50_d3.csv...
+Total runtime: 181.24 seconds (3.02 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.50_d3_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    181.24s (3.02min)
+  DIC:        -28762.46
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[9/15] Processing: excitement_0.50/d4.csv
+  → Output: RESULTS/excitement_0.50_d4.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.50/d4.csv
+Output: RESULTS/excitement_0.50_d4.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.2155 ✗
+    Var 2: ADF p=0.4494 ✗
+    Var 3: ADF p=0.1454 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.366     15        34.37     0:01:27   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.329     15        34.66     0:01:26   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.324     15        35.36     0:01:24   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.327     15        35.42     0:01:24   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 87 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -27472.70
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.50_d4.csv...
+Total runtime: 183.41 seconds (3.06 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.50_d4_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    183.41s (3.06min)
+  DIC:        -27472.70
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[10/15] Processing: excitement_0.50/d5.csv
+  → Output: RESULTS/excitement_0.50_d5.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.50/d5.csv
+Output: RESULTS/excitement_0.50_d5.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.5105 ✗
+    Var 2: ADF p=0.3060 ✗
+    Var 3: ADF p=0.9744 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.316     15        33.19     0:01:30   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.333     15        33.51     0:01:29   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.333     15        34.09     0:01:27   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.299     15        33.54     0:01:29   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 90 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -28447.60
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.50_d5.csv...
+Total runtime: 182.13 seconds (3.04 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.50_d5_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    182.13s (3.04min)
+  DIC:        -28447.60
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[11/15] Processing: excitement_0.75/d1.csv
+  → Output: RESULTS/excitement_0.75_d1.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.75/d1.csv
+Output: RESULTS/excitement_0.75_d1.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.1726 ✗
+    Var 2: ADF p=0.1793 ✗
+    Var 3: ADF p=0.7227 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.304     15        33.77     0:01:28   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.285     15        33.02     0:01:30   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.294     15        34.84     0:01:26   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.302     15        33.52     0:01:29   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 91 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -27710.07
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.75_d1.csv...
+Total runtime: 184.09 seconds (3.07 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.75_d1_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    184.09s (3.07min)
+  DIC:        -27710.07
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[12/15] Processing: excitement_0.75/d2.csv
+  → Output: RESULTS/excitement_0.75_d2.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.75/d2.csv
+Output: RESULTS/excitement_0.75_d2.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.6603 ✗
+    Var 2: ADF p=0.8558 ✗
+    Var 3: ADF p=0.6693 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.321     15        30.05     0:01:39   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.320     15        33.48     0:01:29   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.327     15        30.15     0:01:39   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.268     15        30.48     0:01:38   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 100 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -28765.90
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.75_d2.csv...
+Total runtime: 193.62 seconds (3.23 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.75_d2_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    193.62s (3.23min)
+  DIC:        -28765.90
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[13/15] Processing: excitement_0.75/d3.csv
+  → Output: RESULTS/excitement_0.75_d3.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.75/d3.csv
+Output: RESULTS/excitement_0.75_d3.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.1135 ✗
+    Var 2: ADF p=0.1878 ✗
+    Var 3: ADF p=0.4786 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.339     15        32.52     0:01:32   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.256     15        32.98     0:01:30   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.283     15        29.11     0:01:43   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.405     15        33.04     0:01:30   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 103 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -27932.02
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.75_d3.csv...
+Total runtime: 190.90 seconds (3.18 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.75_d3_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    190.90s (3.18min)
+  DIC:        -27932.02
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[14/15] Processing: excitement_0.75/d4.csv
+  → Output: RESULTS/excitement_0.75_d4.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.75/d4.csv
+Output: RESULTS/excitement_0.75_d4.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.9800 ✗
+    Var 2: ADF p=0.1427 ✗
+    Var 3: ADF p=0.3579 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.319     15        28.57     0:01:44   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.284     15        32.84     0:01:31   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.282     15        29.71     0:01:40   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.277     15        28.52     0:01:45   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 105 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -28414.67
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.75_d4.csv...
+Total runtime: 190.26 seconds (3.17 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.75_d4_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    190.26s (3.17min)
+  DIC:        -28414.67
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+[15/15] Processing: excitement_0.75/d5.csv
+  → Output: RESULTS/excitement_0.75_d5.csv
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [beta, chol_cov]
+============================================================
+BVAR Model with Minnesota Prior
+============================================================
+Input:  excitement_0.75/d5.csv
+Output: RESULTS/excitement_0.75_d5.csv
+Lags:   7
+============================================================
+
+[1/6] Loading data...
+  Data shape: (6250, 3)
+  Train: (5000, 3), Test: (1250, 3)
+
+[2/6] Checking stationarity...
+  Stationarity test:
+    Var 1: ADF p=0.5006 ✗
+    Var 2: ADF p=0.9109 ✗
+    Var 3: ADF p=0.1981 ✗
+    → Applying differencing (level 1)
+    → Stationary at diff level 1
+  Data tag: 1
+
+[3/6] Calculating Minnesota prior...
+
+[4/6] Fitting BVAR model...
+  Model: Y=(4992, 3), X=(4992, 22), params=66
+  MCMC: 2000 draws, 1000 tune, 4 chains
+                                                                                
+                              Step      Grad      Sampli…                       
+  Progre…   Draws   Diverg…   size      evals     Speed     Elapsed   Remaini…  
+ ────────────────────────────────────────────────────────────────────────────── 
+  ━━━━━━━   3000    0         0.289     15        36.96     0:01:21   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.266     15        36.86     0:01:21   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.302     15        35.82     0:01:23   0:00:00   
+                                                  draws/s                       
+  ━━━━━━━   3000    0         0.255     15        35.86     0:01:23   0:00:00   
+                                                  draws/s                       
+                                                                                
+Sampling 4 chains for 1_000 tune and 2_000 draw iterations (4_000 + 8_000 draws total) took 84 seconds.
+
+[5/6] Calculating DIC...
+  DIC: -27022.68
+
+[6/6] Generating forecasts...
+    Pre-generating correlated noise...
+    Generating forecasts (vectorized)...
+      Horizon 0/1250...
+      Horizon 250/1250...
+      Horizon 500/1250...
+      Horizon 750/1250...
+      Horizon 1000/1250...
+    Forecasts complete!
+    Integrating back to levels...
+    Computing quantiles...
+
+Saving results to RESULTS/excitement_0.75_d5.csv...
+Total runtime: 157.75 seconds (2.63 minutes)
+Done!
+
+Generating diagnostic plots...
+  Diagnostics saved: RESULTS/excitement_0.75_d5_diagnostics.png
+
+============================================================
+SUMMARY
+============================================================
+  Runtime:    157.75s (2.63min)
+  DIC:        -27022.68
+  Data tag:   1
+  Lags:       7
+  Forecasts:  1250 observations
+============================================================
+  ✓ Completed
+
+==========================================
+Pipeline Complete!
+==========================================
+Processed: 15 datasets
+Results in: RESULTS/
+
+To compute metrics, run your external metrics script:
+  python compute_metrics.py RESULTS/*.csv
+==========================================

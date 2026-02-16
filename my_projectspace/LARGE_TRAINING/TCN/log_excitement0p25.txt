@@ -1,0 +1,2575 @@
+==========================================
+TCN Training Pipeline
+==========================================
+Configuration:
+  Layers:        3
+  Channels:      64
+  Dropout:       0.1
+  Lookback:      50
+  Plots:         false
+  ShockPropPlus: false
+==========================================
+Results will be saved to: RESULTS/
+
+Found 100 datasets to process
+
+[1/100] Processing: excitement_0.25/d100.csv
+  → Output: RESULTS/excitement_0.25_d100.csv
+Using device: cuda
+Loading data from excitement_0.25/d100.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 59.702718
+Epoch 20/50, Loss: 57.449560
+Epoch 30/50, Loss: 55.111728
+Epoch 40/50, Loss: 55.829823
+Epoch 50/50, Loss: 49.298599
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d100.csv...
+Total runtime: 18.57 seconds (0.31 minutes)
+Done!
+  ✓ Completed
+
+[2/100] Processing: excitement_0.25/d10.csv
+  → Output: RESULTS/excitement_0.25_d10.csv
+Using device: cuda
+Loading data from excitement_0.25/d10.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 74.232969
+Epoch 20/50, Loss: 67.911577
+Epoch 30/50, Loss: 70.622079
+Epoch 40/50, Loss: 70.887569
+Epoch 50/50, Loss: 63.427632
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d10.csv...
+Total runtime: 19.82 seconds (0.33 minutes)
+Done!
+  ✓ Completed
+
+[3/100] Processing: excitement_0.25/d11.csv
+  → Output: RESULTS/excitement_0.25_d11.csv
+Using device: cuda
+Loading data from excitement_0.25/d11.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 58.189525
+Epoch 20/50, Loss: 52.212458
+Epoch 30/50, Loss: 53.917650
+Epoch 40/50, Loss: 56.191695
+Epoch 50/50, Loss: 47.960481
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d11.csv...
+Total runtime: 19.27 seconds (0.32 minutes)
+Done!
+  ✓ Completed
+
+[4/100] Processing: excitement_0.25/d12.csv
+  → Output: RESULTS/excitement_0.25_d12.csv
+Using device: cuda
+Loading data from excitement_0.25/d12.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 68.467920
+Epoch 20/50, Loss: 61.818586
+Epoch 30/50, Loss: 54.896658
+Epoch 40/50, Loss: 50.623442
+Epoch 50/50, Loss: 53.472452
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d12.csv...
+Total runtime: 18.99 seconds (0.32 minutes)
+Done!
+  ✓ Completed
+
+[5/100] Processing: excitement_0.25/d13.csv
+  → Output: RESULTS/excitement_0.25_d13.csv
+Using device: cuda
+Loading data from excitement_0.25/d13.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 74.138089
+Epoch 20/50, Loss: 69.154792
+Epoch 30/50, Loss: 67.824851
+Early stopping at epoch 36/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d13.csv...
+Total runtime: 13.54 seconds (0.23 minutes)
+Done!
+  ✓ Completed
+
+[6/100] Processing: excitement_0.25/d14.csv
+  → Output: RESULTS/excitement_0.25_d14.csv
+Using device: cuda
+Loading data from excitement_0.25/d14.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 76.940980
+Epoch 20/50, Loss: 69.941711
+Early stopping at epoch 28/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d14.csv...
+Total runtime: 10.94 seconds (0.18 minutes)
+Done!
+  ✓ Completed
+
+[7/100] Processing: excitement_0.25/d15.csv
+  → Output: RESULTS/excitement_0.25_d15.csv
+Using device: cuda
+Loading data from excitement_0.25/d15.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 77.420702
+Epoch 20/50, Loss: 67.389716
+Epoch 30/50, Loss: 64.275859
+Epoch 40/50, Loss: 66.979516
+Epoch 50/50, Loss: 66.982135
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d15.csv...
+Total runtime: 19.07 seconds (0.32 minutes)
+Done!
+  ✓ Completed
+
+[8/100] Processing: excitement_0.25/d16.csv
+  → Output: RESULTS/excitement_0.25_d16.csv
+Using device: cuda
+Loading data from excitement_0.25/d16.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 64.642996
+Epoch 20/50, Loss: 60.846426
+Epoch 30/50, Loss: 60.742564
+Early stopping at epoch 38/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d16.csv...
+Total runtime: 15.26 seconds (0.25 minutes)
+Done!
+  ✓ Completed
+
+[9/100] Processing: excitement_0.25/d17.csv
+  → Output: RESULTS/excitement_0.25_d17.csv
+Using device: cuda
+Loading data from excitement_0.25/d17.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 65.161282
+Epoch 20/50, Loss: 65.254051
+Epoch 30/50, Loss: 64.483978
+Epoch 40/50, Loss: 61.300844
+Early stopping at epoch 47/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d17.csv...
+Total runtime: 18.37 seconds (0.31 minutes)
+Done!
+  ✓ Completed
+
+[10/100] Processing: excitement_0.25/d18.csv
+  → Output: RESULTS/excitement_0.25_d18.csv
+Using device: cuda
+Loading data from excitement_0.25/d18.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 76.563832
+Epoch 20/50, Loss: 74.353374
+Epoch 30/50, Loss: 69.876527
+Epoch 40/50, Loss: 64.643084
+Early stopping at epoch 42/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d18.csv...
+Total runtime: 16.90 seconds (0.28 minutes)
+Done!
+  ✓ Completed
+
+[11/100] Processing: excitement_0.25/d19.csv
+  → Output: RESULTS/excitement_0.25_d19.csv
+Using device: cuda
+Loading data from excitement_0.25/d19.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 66.811533
+Epoch 20/50, Loss: 57.673334
+Early stopping at epoch 30/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d19.csv...
+Total runtime: 12.47 seconds (0.21 minutes)
+Done!
+  ✓ Completed
+
+[12/100] Processing: excitement_0.25/d1.csv
+  → Output: RESULTS/excitement_0.25_d1.csv
+Using device: cuda
+Loading data from excitement_0.25/d1.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 66.595949
+Epoch 20/50, Loss: 60.005666
+Epoch 30/50, Loss: 55.000144
+Epoch 40/50, Loss: 56.408396
+Epoch 50/50, Loss: 54.288534
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d1.csv...
+Total runtime: 20.54 seconds (0.34 minutes)
+Done!
+  ✓ Completed
+
+[13/100] Processing: excitement_0.25/d20.csv
+  → Output: RESULTS/excitement_0.25_d20.csv
+Using device: cuda
+Loading data from excitement_0.25/d20.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 80.250518
+Epoch 20/50, Loss: 74.844146
+Epoch 30/50, Loss: 71.453204
+Epoch 40/50, Loss: 73.306273
+Epoch 50/50, Loss: 66.692737
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d20.csv...
+Total runtime: 20.56 seconds (0.34 minutes)
+Done!
+  ✓ Completed
+
+[14/100] Processing: excitement_0.25/d21.csv
+  → Output: RESULTS/excitement_0.25_d21.csv
+Using device: cuda
+Loading data from excitement_0.25/d21.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 73.369545
+Epoch 20/50, Loss: 61.911352
+Epoch 30/50, Loss: 62.389165
+Early stopping at epoch 35/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d21.csv...
+Total runtime: 14.67 seconds (0.24 minutes)
+Done!
+  ✓ Completed
+
+[15/100] Processing: excitement_0.25/d22.csv
+  → Output: RESULTS/excitement_0.25_d22.csv
+Using device: cuda
+Loading data from excitement_0.25/d22.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 67.107268
+Epoch 20/50, Loss: 62.893754
+Epoch 30/50, Loss: 59.743150
+Epoch 40/50, Loss: 57.044437
+Epoch 50/50, Loss: 59.942068
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d22.csv...
+Total runtime: 20.49 seconds (0.34 minutes)
+Done!
+  ✓ Completed
+
+[16/100] Processing: excitement_0.25/d23.csv
+  → Output: RESULTS/excitement_0.25_d23.csv
+Using device: cuda
+Loading data from excitement_0.25/d23.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 74.993714
+Epoch 20/50, Loss: 77.531669
+Epoch 30/50, Loss: 76.038083
+Early stopping at epoch 33/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d23.csv...
+Total runtime: 14.13 seconds (0.24 minutes)
+Done!
+  ✓ Completed
+
+[17/100] Processing: excitement_0.25/d24.csv
+  → Output: RESULTS/excitement_0.25_d24.csv
+Using device: cuda
+Loading data from excitement_0.25/d24.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 73.941235
+Epoch 20/50, Loss: 64.926735
+Epoch 30/50, Loss: 62.215385
+Early stopping at epoch 37/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d24.csv...
+Total runtime: 15.63 seconds (0.26 minutes)
+Done!
+  ✓ Completed
+
+[18/100] Processing: excitement_0.25/d25.csv
+  → Output: RESULTS/excitement_0.25_d25.csv
+Using device: cuda
+Loading data from excitement_0.25/d25.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 68.256060
+Epoch 20/50, Loss: 62.568934
+Epoch 30/50, Loss: 65.280757
+Early stopping at epoch 31/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d25.csv...
+Total runtime: 13.57 seconds (0.23 minutes)
+Done!
+  ✓ Completed
+
+[19/100] Processing: excitement_0.25/d26.csv
+  → Output: RESULTS/excitement_0.25_d26.csv
+Using device: cuda
+Loading data from excitement_0.25/d26.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 72.644423
+Epoch 20/50, Loss: 62.838756
+Epoch 30/50, Loss: 60.809001
+Epoch 40/50, Loss: 60.895130
+Epoch 50/50, Loss: 58.794288
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d26.csv...
+Total runtime: 20.94 seconds (0.35 minutes)
+Done!
+  ✓ Completed
+
+[20/100] Processing: excitement_0.25/d27.csv
+  → Output: RESULTS/excitement_0.25_d27.csv
+Using device: cuda
+Loading data from excitement_0.25/d27.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 77.891989
+Epoch 20/50, Loss: 72.031435
+Epoch 30/50, Loss: 70.444796
+Early stopping at epoch 35/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d27.csv...
+Total runtime: 15.41 seconds (0.26 minutes)
+Done!
+  ✓ Completed
+
+[21/100] Processing: excitement_0.25/d28.csv
+  → Output: RESULTS/excitement_0.25_d28.csv
+Using device: cuda
+Loading data from excitement_0.25/d28.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 74.729430
+Epoch 20/50, Loss: 69.177727
+Epoch 30/50, Loss: 68.132667
+Early stopping at epoch 31/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d28.csv...
+Total runtime: 13.92 seconds (0.23 minutes)
+Done!
+  ✓ Completed
+
+[22/100] Processing: excitement_0.25/d29.csv
+  → Output: RESULTS/excitement_0.25_d29.csv
+Using device: cuda
+Loading data from excitement_0.25/d29.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 75.361648
+Epoch 20/50, Loss: 68.340290
+Epoch 30/50, Loss: 67.261407
+Early stopping at epoch 31/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d29.csv...
+Total runtime: 13.75 seconds (0.23 minutes)
+Done!
+  ✓ Completed
+
+[23/100] Processing: excitement_0.25/d2.csv
+  → Output: RESULTS/excitement_0.25_d2.csv
+Using device: cuda
+Loading data from excitement_0.25/d2.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 58.784441
+Epoch 20/50, Loss: 52.408436
+Epoch 30/50, Loss: 52.120553
+Epoch 40/50, Loss: 47.489860
+Epoch 50/50, Loss: 47.828436
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d2.csv...
+Total runtime: 21.40 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[24/100] Processing: excitement_0.25/d30.csv
+  → Output: RESULTS/excitement_0.25_d30.csv
+Using device: cuda
+Loading data from excitement_0.25/d30.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 62.143216
+Epoch 20/50, Loss: 63.843675
+Epoch 30/50, Loss: 52.470243
+Early stopping at epoch 36/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d30.csv...
+Total runtime: 15.94 seconds (0.27 minutes)
+Done!
+  ✓ Completed
+
+[25/100] Processing: excitement_0.25/d31.csv
+  → Output: RESULTS/excitement_0.25_d31.csv
+Using device: cuda
+Loading data from excitement_0.25/d31.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 72.980786
+Epoch 20/50, Loss: 63.755958
+Epoch 30/50, Loss: 62.553309
+Early stopping at epoch 33/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d31.csv...
+Total runtime: 15.06 seconds (0.25 minutes)
+Done!
+  ✓ Completed
+
+[26/100] Processing: excitement_0.25/d32.csv
+  → Output: RESULTS/excitement_0.25_d32.csv
+Using device: cuda
+Loading data from excitement_0.25/d32.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 77.657119
+Epoch 20/50, Loss: 68.946923
+Epoch 30/50, Loss: 65.254965
+Epoch 40/50, Loss: 64.767249
+Early stopping at epoch 48/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d32.csv...
+Total runtime: 20.63 seconds (0.34 minutes)
+Done!
+  ✓ Completed
+
+[27/100] Processing: excitement_0.25/d33.csv
+  → Output: RESULTS/excitement_0.25_d33.csv
+Using device: cuda
+Loading data from excitement_0.25/d33.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 68.376997
+Epoch 20/50, Loss: 58.941866
+Epoch 30/50, Loss: 57.283058
+Epoch 40/50, Loss: 56.404889
+Early stopping at epoch 43/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d33.csv...
+Total runtime: 18.46 seconds (0.31 minutes)
+Done!
+  ✓ Completed
+
+[28/100] Processing: excitement_0.25/d34.csv
+  → Output: RESULTS/excitement_0.25_d34.csv
+Using device: cuda
+Loading data from excitement_0.25/d34.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 63.525010
+Epoch 20/50, Loss: 63.975144
+Epoch 30/50, Loss: 61.773880
+Early stopping at epoch 35/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d34.csv...
+Total runtime: 15.11 seconds (0.25 minutes)
+Done!
+  ✓ Completed
+
+[29/100] Processing: excitement_0.25/d35.csv
+  → Output: RESULTS/excitement_0.25_d35.csv
+Using device: cuda
+Loading data from excitement_0.25/d35.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 71.478060
+Epoch 20/50, Loss: 62.482883
+Epoch 30/50, Loss: 58.372373
+Epoch 40/50, Loss: 63.238585
+Early stopping at epoch 48/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d35.csv...
+Total runtime: 21.07 seconds (0.35 minutes)
+Done!
+  ✓ Completed
+
+[30/100] Processing: excitement_0.25/d36.csv
+  → Output: RESULTS/excitement_0.25_d36.csv
+Using device: cuda
+Loading data from excitement_0.25/d36.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 63.622963
+Epoch 20/50, Loss: 58.262487
+Epoch 30/50, Loss: 52.274379
+Epoch 40/50, Loss: 47.164052
+Epoch 50/50, Loss: 47.925525
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d36.csv...
+Total runtime: 21.65 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[31/100] Processing: excitement_0.25/d37.csv
+  → Output: RESULTS/excitement_0.25_d37.csv
+Using device: cuda
+Loading data from excitement_0.25/d37.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 71.453909
+Epoch 20/50, Loss: 70.981319
+Epoch 30/50, Loss: 66.736143
+Early stopping at epoch 34/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d37.csv...
+Total runtime: 15.60 seconds (0.26 minutes)
+Done!
+  ✓ Completed
+
+[32/100] Processing: excitement_0.25/d38.csv
+  → Output: RESULTS/excitement_0.25_d38.csv
+Using device: cuda
+Loading data from excitement_0.25/d38.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 77.260271
+Epoch 20/50, Loss: 70.623399
+Epoch 30/50, Loss: 68.947173
+Early stopping at epoch 36/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d38.csv...
+Total runtime: 16.21 seconds (0.27 minutes)
+Done!
+  ✓ Completed
+
+[33/100] Processing: excitement_0.25/d39.csv
+  → Output: RESULTS/excitement_0.25_d39.csv
+Using device: cuda
+Loading data from excitement_0.25/d39.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 68.633175
+Epoch 20/50, Loss: 62.470753
+Epoch 30/50, Loss: 59.191914
+Early stopping at epoch 36/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d39.csv...
+Total runtime: 15.95 seconds (0.27 minutes)
+Done!
+  ✓ Completed
+
+[34/100] Processing: excitement_0.25/d3.csv
+  → Output: RESULTS/excitement_0.25_d3.csv
+Using device: cuda
+Loading data from excitement_0.25/d3.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 70.544728
+Epoch 20/50, Loss: 60.413285
+Early stopping at epoch 28/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d3.csv...
+Total runtime: 12.74 seconds (0.21 minutes)
+Done!
+  ✓ Completed
+
+[35/100] Processing: excitement_0.25/d40.csv
+  → Output: RESULTS/excitement_0.25_d40.csv
+Using device: cuda
+Loading data from excitement_0.25/d40.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 82.116288
+Epoch 20/50, Loss: 79.630380
+Epoch 30/50, Loss: 72.122353
+Epoch 40/50, Loss: 65.361430
+Early stopping at epoch 50/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d40.csv...
+Total runtime: 21.51 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[36/100] Processing: excitement_0.25/d41.csv
+  → Output: RESULTS/excitement_0.25_d41.csv
+Using device: cuda
+Loading data from excitement_0.25/d41.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 78.693390
+Epoch 20/50, Loss: 70.966916
+Epoch 30/50, Loss: 65.666749
+Epoch 40/50, Loss: 65.892442
+Early stopping at epoch 44/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d41.csv...
+Total runtime: 19.42 seconds (0.32 minutes)
+Done!
+  ✓ Completed
+
+[37/100] Processing: excitement_0.25/d42.csv
+  → Output: RESULTS/excitement_0.25_d42.csv
+Using device: cuda
+Loading data from excitement_0.25/d42.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 76.962085
+Epoch 20/50, Loss: 62.185993
+Epoch 30/50, Loss: 66.467978
+Epoch 40/50, Loss: 58.975620
+Epoch 50/50, Loss: 57.530238
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d42.csv...
+Total runtime: 21.85 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[38/100] Processing: excitement_0.25/d43.csv
+  → Output: RESULTS/excitement_0.25_d43.csv
+Using device: cuda
+Loading data from excitement_0.25/d43.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 72.874605
+Epoch 20/50, Loss: 64.794609
+Epoch 30/50, Loss: 64.175358
+Epoch 40/50, Loss: 64.758229
+Epoch 50/50, Loss: 61.574240
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d43.csv...
+Total runtime: 21.60 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[39/100] Processing: excitement_0.25/d44.csv
+  → Output: RESULTS/excitement_0.25_d44.csv
+Using device: cuda
+Loading data from excitement_0.25/d44.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 66.270731
+Epoch 20/50, Loss: 68.165987
+Epoch 30/50, Loss: 61.194629
+Epoch 40/50, Loss: 60.145730
+Early stopping at epoch 43/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d44.csv...
+Total runtime: 19.41 seconds (0.32 minutes)
+Done!
+  ✓ Completed
+
+[40/100] Processing: excitement_0.25/d45.csv
+  → Output: RESULTS/excitement_0.25_d45.csv
+Using device: cuda
+Loading data from excitement_0.25/d45.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 72.708649
+Epoch 20/50, Loss: 72.060229
+Epoch 30/50, Loss: 71.559513
+Early stopping at epoch 37/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d45.csv...
+Total runtime: 16.17 seconds (0.27 minutes)
+Done!
+  ✓ Completed
+
+[41/100] Processing: excitement_0.25/d46.csv
+  → Output: RESULTS/excitement_0.25_d46.csv
+Using device: cuda
+Loading data from excitement_0.25/d46.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 85.342028
+Epoch 20/50, Loss: 80.581953
+Epoch 30/50, Loss: 72.776322
+Epoch 40/50, Loss: 69.148667
+Early stopping at epoch 49/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d46.csv...
+Total runtime: 21.62 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[42/100] Processing: excitement_0.25/d47.csv
+  → Output: RESULTS/excitement_0.25_d47.csv
+Using device: cuda
+Loading data from excitement_0.25/d47.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 82.587541
+Epoch 20/50, Loss: 70.136622
+Epoch 30/50, Loss: 64.899020
+Epoch 40/50, Loss: 66.693750
+Epoch 50/50, Loss: 69.428024
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d47.csv...
+Total runtime: 22.15 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[43/100] Processing: excitement_0.25/d48.csv
+  → Output: RESULTS/excitement_0.25_d48.csv
+Using device: cuda
+Loading data from excitement_0.25/d48.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 58.884729
+Epoch 20/50, Loss: 55.528558
+Early stopping at epoch 29/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d48.csv...
+Total runtime: 13.33 seconds (0.22 minutes)
+Done!
+  ✓ Completed
+
+[44/100] Processing: excitement_0.25/d49.csv
+  → Output: RESULTS/excitement_0.25_d49.csv
+Using device: cuda
+Loading data from excitement_0.25/d49.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 80.028038
+Epoch 20/50, Loss: 69.522728
+Epoch 30/50, Loss: 64.258800
+Epoch 40/50, Loss: 63.419205
+Epoch 50/50, Loss: 63.741631
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d49.csv...
+Total runtime: 21.99 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[45/100] Processing: excitement_0.25/d4.csv
+  → Output: RESULTS/excitement_0.25_d4.csv
+Using device: cuda
+Loading data from excitement_0.25/d4.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 70.015230
+Epoch 20/50, Loss: 59.960859
+Epoch 30/50, Loss: 56.561034
+Epoch 40/50, Loss: 60.163268
+Early stopping at epoch 45/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d4.csv...
+Total runtime: 19.76 seconds (0.33 minutes)
+Done!
+  ✓ Completed
+
+[46/100] Processing: excitement_0.25/d50.csv
+  → Output: RESULTS/excitement_0.25_d50.csv
+Using device: cuda
+Loading data from excitement_0.25/d50.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 71.809849
+Epoch 20/50, Loss: 67.328900
+Epoch 30/50, Loss: 66.635316
+Epoch 40/50, Loss: 64.185251
+Epoch 50/50, Loss: 65.760496
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d50.csv...
+Total runtime: 22.01 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[47/100] Processing: excitement_0.25/d51.csv
+  → Output: RESULTS/excitement_0.25_d51.csv
+Using device: cuda
+Loading data from excitement_0.25/d51.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 69.059079
+Epoch 20/50, Loss: 67.671445
+Epoch 30/50, Loss: 62.726651
+Early stopping at epoch 34/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d51.csv...
+Total runtime: 15.28 seconds (0.25 minutes)
+Done!
+  ✓ Completed
+
+[48/100] Processing: excitement_0.25/d52.csv
+  → Output: RESULTS/excitement_0.25_d52.csv
+Using device: cuda
+Loading data from excitement_0.25/d52.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 77.829001
+Epoch 20/50, Loss: 73.793417
+Epoch 30/50, Loss: 69.060370
+Epoch 40/50, Loss: 63.850990
+Epoch 50/50, Loss: 62.782491
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d52.csv...
+Total runtime: 21.88 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[49/100] Processing: excitement_0.25/d53.csv
+  → Output: RESULTS/excitement_0.25_d53.csv
+Using device: cuda
+Loading data from excitement_0.25/d53.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 72.631863
+Epoch 20/50, Loss: 63.893250
+Epoch 30/50, Loss: 62.367753
+Early stopping at epoch 35/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d53.csv...
+Total runtime: 16.26 seconds (0.27 minutes)
+Done!
+  ✓ Completed
+
+[50/100] Processing: excitement_0.25/d54.csv
+  → Output: RESULTS/excitement_0.25_d54.csv
+Using device: cuda
+Loading data from excitement_0.25/d54.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 62.878623
+Epoch 20/50, Loss: 61.910489
+Epoch 30/50, Loss: 61.549579
+Epoch 40/50, Loss: 53.351913
+Early stopping at epoch 49/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d54.csv...
+Total runtime: 21.57 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[51/100] Processing: excitement_0.25/d55.csv
+  → Output: RESULTS/excitement_0.25_d55.csv
+Using device: cuda
+Loading data from excitement_0.25/d55.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 72.391912
+Epoch 20/50, Loss: 63.176122
+Epoch 30/50, Loss: 65.217814
+Epoch 40/50, Loss: 60.146812
+Epoch 50/50, Loss: 61.973009
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d55.csv...
+Total runtime: 22.12 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[52/100] Processing: excitement_0.25/d56.csv
+  → Output: RESULTS/excitement_0.25_d56.csv
+Using device: cuda
+Loading data from excitement_0.25/d56.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 67.476791
+Epoch 20/50, Loss: 58.846840
+Epoch 30/50, Loss: 57.530589
+Epoch 40/50, Loss: 57.527452
+Epoch 50/50, Loss: 54.919056
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d56.csv...
+Total runtime: 21.95 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[53/100] Processing: excitement_0.25/d57.csv
+  → Output: RESULTS/excitement_0.25_d57.csv
+Using device: cuda
+Loading data from excitement_0.25/d57.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 77.960917
+Epoch 20/50, Loss: 75.186861
+Epoch 30/50, Loss: 71.366030
+Epoch 40/50, Loss: 70.086148
+Early stopping at epoch 47/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d57.csv...
+Total runtime: 20.88 seconds (0.35 minutes)
+Done!
+  ✓ Completed
+
+[54/100] Processing: excitement_0.25/d58.csv
+  → Output: RESULTS/excitement_0.25_d58.csv
+Using device: cuda
+Loading data from excitement_0.25/d58.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 76.949641
+Epoch 20/50, Loss: 78.393733
+Early stopping at epoch 21/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d58.csv...
+Total runtime: 10.30 seconds (0.17 minutes)
+Done!
+  ✓ Completed
+
+[55/100] Processing: excitement_0.25/d59.csv
+  → Output: RESULTS/excitement_0.25_d59.csv
+Using device: cuda
+Loading data from excitement_0.25/d59.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 77.241672
+Epoch 20/50, Loss: 73.001547
+Epoch 30/50, Loss: 71.760935
+Epoch 40/50, Loss: 70.220974
+Early stopping at epoch 44/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d59.csv...
+Total runtime: 19.80 seconds (0.33 minutes)
+Done!
+  ✓ Completed
+
+[56/100] Processing: excitement_0.25/d5.csv
+  → Output: RESULTS/excitement_0.25_d5.csv
+Using device: cuda
+Loading data from excitement_0.25/d5.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 75.890070
+Epoch 20/50, Loss: 66.480895
+Epoch 30/50, Loss: 61.621073
+Epoch 40/50, Loss: 56.040508
+Early stopping at epoch 50/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d5.csv...
+Total runtime: 22.18 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[57/100] Processing: excitement_0.25/d60.csv
+  → Output: RESULTS/excitement_0.25_d60.csv
+Using device: cuda
+Loading data from excitement_0.25/d60.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 69.623943
+Epoch 20/50, Loss: 62.180377
+Early stopping at epoch 27/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d60.csv...
+Total runtime: 12.62 seconds (0.21 minutes)
+Done!
+  ✓ Completed
+
+[58/100] Processing: excitement_0.25/d61.csv
+  → Output: RESULTS/excitement_0.25_d61.csv
+Using device: cuda
+Loading data from excitement_0.25/d61.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 90.188298
+Epoch 20/50, Loss: 81.429284
+Epoch 30/50, Loss: 86.530667
+Epoch 40/50, Loss: 80.983128
+Early stopping at epoch 48/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d61.csv...
+Total runtime: 21.42 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[59/100] Processing: excitement_0.25/d62.csv
+  → Output: RESULTS/excitement_0.25_d62.csv
+Using device: cuda
+Loading data from excitement_0.25/d62.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 66.108763
+Epoch 20/50, Loss: 61.602877
+Early stopping at epoch 29/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d62.csv...
+Total runtime: 13.52 seconds (0.23 minutes)
+Done!
+  ✓ Completed
+
+[60/100] Processing: excitement_0.25/d63.csv
+  → Output: RESULTS/excitement_0.25_d63.csv
+Using device: cuda
+Loading data from excitement_0.25/d63.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 77.946418
+Epoch 20/50, Loss: 71.637507
+Epoch 30/50, Loss: 61.482741
+Epoch 40/50, Loss: 59.061737
+Epoch 50/50, Loss: 61.381646
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d63.csv...
+Total runtime: 22.03 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[61/100] Processing: excitement_0.25/d64.csv
+  → Output: RESULTS/excitement_0.25_d64.csv
+Using device: cuda
+Loading data from excitement_0.25/d64.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 73.700969
+Epoch 20/50, Loss: 57.954265
+Epoch 30/50, Loss: 60.401495
+Epoch 40/50, Loss: 57.043718
+Epoch 50/50, Loss: 55.312895
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d64.csv...
+Total runtime: 21.95 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[62/100] Processing: excitement_0.25/d65.csv
+  → Output: RESULTS/excitement_0.25_d65.csv
+Using device: cuda
+Loading data from excitement_0.25/d65.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 54.730590
+Epoch 20/50, Loss: 46.755104
+Epoch 30/50, Loss: 46.740257
+Epoch 40/50, Loss: 45.693290
+Epoch 50/50, Loss: 46.906095
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d65.csv...
+Total runtime: 22.31 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[63/100] Processing: excitement_0.25/d66.csv
+  → Output: RESULTS/excitement_0.25_d66.csv
+Using device: cuda
+Loading data from excitement_0.25/d66.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 74.638662
+Epoch 20/50, Loss: 69.896598
+Early stopping at epoch 23/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d66.csv...
+Total runtime: 10.94 seconds (0.18 minutes)
+Done!
+  ✓ Completed
+
+[64/100] Processing: excitement_0.25/d67.csv
+  → Output: RESULTS/excitement_0.25_d67.csv
+Using device: cuda
+Loading data from excitement_0.25/d67.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 59.817114
+Epoch 20/50, Loss: 55.904532
+Epoch 30/50, Loss: 54.465179
+Epoch 40/50, Loss: 52.412595
+Early stopping at epoch 43/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d67.csv...
+Total runtime: 19.40 seconds (0.32 minutes)
+Done!
+  ✓ Completed
+
+[65/100] Processing: excitement_0.25/d68.csv
+  → Output: RESULTS/excitement_0.25_d68.csv
+Using device: cuda
+Loading data from excitement_0.25/d68.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 87.773708
+Epoch 20/50, Loss: 73.257076
+Epoch 30/50, Loss: 70.851354
+Epoch 40/50, Loss: 67.857406
+Epoch 50/50, Loss: 70.649811
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d68.csv...
+Total runtime: 22.13 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[66/100] Processing: excitement_0.25/d69.csv
+  → Output: RESULTS/excitement_0.25_d69.csv
+Using device: cuda
+Loading data from excitement_0.25/d69.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 64.758801
+Epoch 20/50, Loss: 62.541261
+Epoch 30/50, Loss: 63.470125
+Early stopping at epoch 35/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d69.csv...
+Total runtime: 15.87 seconds (0.26 minutes)
+Done!
+  ✓ Completed
+
+[67/100] Processing: excitement_0.25/d6.csv
+  → Output: RESULTS/excitement_0.25_d6.csv
+Using device: cuda
+Loading data from excitement_0.25/d6.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 62.909543
+Epoch 20/50, Loss: 52.240005
+Epoch 30/50, Loss: 51.500126
+Epoch 40/50, Loss: 55.290881
+Epoch 50/50, Loss: 49.985701
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d6.csv...
+Total runtime: 22.15 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[68/100] Processing: excitement_0.25/d70.csv
+  → Output: RESULTS/excitement_0.25_d70.csv
+Using device: cuda
+Loading data from excitement_0.25/d70.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 73.769162
+Epoch 20/50, Loss: 68.063491
+Epoch 30/50, Loss: 67.339923
+Epoch 40/50, Loss: 60.411593
+Epoch 50/50, Loss: 57.381132
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d70.csv...
+Total runtime: 22.23 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[69/100] Processing: excitement_0.25/d71.csv
+  → Output: RESULTS/excitement_0.25_d71.csv
+Using device: cuda
+Loading data from excitement_0.25/d71.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 75.460878
+Epoch 20/50, Loss: 70.206963
+Epoch 30/50, Loss: 63.013148
+Early stopping at epoch 31/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d71.csv...
+Total runtime: 14.24 seconds (0.24 minutes)
+Done!
+  ✓ Completed
+
+[70/100] Processing: excitement_0.25/d72.csv
+  → Output: RESULTS/excitement_0.25_d72.csv
+Using device: cuda
+Loading data from excitement_0.25/d72.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 70.337384
+Epoch 20/50, Loss: 58.831952
+Epoch 30/50, Loss: 52.651077
+Epoch 40/50, Loss: 53.418855
+Early stopping at epoch 43/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d72.csv...
+Total runtime: 19.22 seconds (0.32 minutes)
+Done!
+  ✓ Completed
+
+[71/100] Processing: excitement_0.25/d73.csv
+  → Output: RESULTS/excitement_0.25_d73.csv
+Using device: cuda
+Loading data from excitement_0.25/d73.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 62.065152
+Epoch 20/50, Loss: 68.190011
+Epoch 30/50, Loss: 58.388376
+Early stopping at epoch 32/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d73.csv...
+Total runtime: 14.73 seconds (0.25 minutes)
+Done!
+  ✓ Completed
+
+[72/100] Processing: excitement_0.25/d74.csv
+  → Output: RESULTS/excitement_0.25_d74.csv
+Using device: cuda
+Loading data from excitement_0.25/d74.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 73.754720
+Epoch 20/50, Loss: 71.121103
+Epoch 30/50, Loss: 70.030270
+Epoch 40/50, Loss: 63.205004
+Epoch 50/50, Loss: 60.221422
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d74.csv...
+Total runtime: 22.21 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[73/100] Processing: excitement_0.25/d75.csv
+  → Output: RESULTS/excitement_0.25_d75.csv
+Using device: cuda
+Loading data from excitement_0.25/d75.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 62.830194
+Epoch 20/50, Loss: 58.257985
+Epoch 30/50, Loss: 56.251604
+Early stopping at epoch 32/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d75.csv...
+Total runtime: 14.93 seconds (0.25 minutes)
+Done!
+  ✓ Completed
+
+[74/100] Processing: excitement_0.25/d76.csv
+  → Output: RESULTS/excitement_0.25_d76.csv
+Using device: cuda
+Loading data from excitement_0.25/d76.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 69.854409
+Epoch 20/50, Loss: 59.369883
+Epoch 30/50, Loss: 58.275136
+Epoch 40/50, Loss: 56.188051
+Early stopping at epoch 47/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d76.csv...
+Total runtime: 21.12 seconds (0.35 minutes)
+Done!
+  ✓ Completed
+
+[75/100] Processing: excitement_0.25/d77.csv
+  → Output: RESULTS/excitement_0.25_d77.csv
+Using device: cuda
+Loading data from excitement_0.25/d77.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 66.841013
+Epoch 20/50, Loss: 65.175603
+Epoch 30/50, Loss: 55.226613
+Early stopping at epoch 40/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d77.csv...
+Total runtime: 18.00 seconds (0.30 minutes)
+Done!
+  ✓ Completed
+
+[76/100] Processing: excitement_0.25/d78.csv
+  → Output: RESULTS/excitement_0.25_d78.csv
+Using device: cuda
+Loading data from excitement_0.25/d78.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 71.248199
+Epoch 20/50, Loss: 61.708842
+Epoch 30/50, Loss: 62.443665
+Epoch 40/50, Loss: 60.827604
+Early stopping at epoch 41/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d78.csv...
+Total runtime: 18.60 seconds (0.31 minutes)
+Done!
+  ✓ Completed
+
+[77/100] Processing: excitement_0.25/d79.csv
+  → Output: RESULTS/excitement_0.25_d79.csv
+Using device: cuda
+Loading data from excitement_0.25/d79.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 59.277675
+Epoch 20/50, Loss: 57.845762
+Early stopping at epoch 23/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d79.csv...
+Total runtime: 11.18 seconds (0.19 minutes)
+Done!
+  ✓ Completed
+
+[78/100] Processing: excitement_0.25/d7.csv
+  → Output: RESULTS/excitement_0.25_d7.csv
+Using device: cuda
+Loading data from excitement_0.25/d7.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 80.794278
+Epoch 20/50, Loss: 78.940461
+Early stopping at epoch 28/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d7.csv...
+Total runtime: 13.15 seconds (0.22 minutes)
+Done!
+  ✓ Completed
+
+[79/100] Processing: excitement_0.25/d80.csv
+  → Output: RESULTS/excitement_0.25_d80.csv
+Using device: cuda
+Loading data from excitement_0.25/d80.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 67.666750
+Epoch 20/50, Loss: 66.973682
+Epoch 30/50, Loss: 67.395842
+Epoch 40/50, Loss: 65.042089
+Early stopping at epoch 48/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d80.csv...
+Total runtime: 21.54 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[80/100] Processing: excitement_0.25/d81.csv
+  → Output: RESULTS/excitement_0.25_d81.csv
+Using device: cuda
+Loading data from excitement_0.25/d81.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 73.601836
+Epoch 20/50, Loss: 65.004169
+Epoch 30/50, Loss: 62.867277
+Epoch 40/50, Loss: 58.642948
+Epoch 50/50, Loss: 58.200160
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d81.csv...
+Total runtime: 22.33 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[81/100] Processing: excitement_0.25/d82.csv
+  → Output: RESULTS/excitement_0.25_d82.csv
+Using device: cuda
+Loading data from excitement_0.25/d82.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 78.558006
+Epoch 20/50, Loss: 75.418255
+Epoch 30/50, Loss: 65.497225
+Epoch 40/50, Loss: 64.133972
+Early stopping at epoch 46/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d82.csv...
+Total runtime: 20.73 seconds (0.35 minutes)
+Done!
+  ✓ Completed
+
+[82/100] Processing: excitement_0.25/d83.csv
+  → Output: RESULTS/excitement_0.25_d83.csv
+Using device: cuda
+Loading data from excitement_0.25/d83.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 62.025106
+Epoch 20/50, Loss: 63.142315
+Epoch 30/50, Loss: 54.624815
+Early stopping at epoch 35/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d83.csv...
+Total runtime: 15.89 seconds (0.26 minutes)
+Done!
+  ✓ Completed
+
+[83/100] Processing: excitement_0.25/d84.csv
+  → Output: RESULTS/excitement_0.25_d84.csv
+Using device: cuda
+Loading data from excitement_0.25/d84.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 86.035384
+Epoch 20/50, Loss: 79.487205
+Epoch 30/50, Loss: 80.170994
+Epoch 40/50, Loss: 78.051287
+Epoch 50/50, Loss: 70.853412
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d84.csv...
+Total runtime: 22.44 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[84/100] Processing: excitement_0.25/d85.csv
+  → Output: RESULTS/excitement_0.25_d85.csv
+Using device: cuda
+Loading data from excitement_0.25/d85.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 59.562766
+Epoch 20/50, Loss: 52.807311
+Epoch 30/50, Loss: 50.664582
+Epoch 40/50, Loss: 50.854114
+Early stopping at epoch 46/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d85.csv...
+Total runtime: 20.49 seconds (0.34 minutes)
+Done!
+  ✓ Completed
+
+[85/100] Processing: excitement_0.25/d86.csv
+  → Output: RESULTS/excitement_0.25_d86.csv
+Using device: cuda
+Loading data from excitement_0.25/d86.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 68.305994
+Epoch 20/50, Loss: 65.335535
+Epoch 30/50, Loss: 62.261495
+Early stopping at epoch 33/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d86.csv...
+Total runtime: 15.08 seconds (0.25 minutes)
+Done!
+  ✓ Completed
+
+[86/100] Processing: excitement_0.25/d87.csv
+  → Output: RESULTS/excitement_0.25_d87.csv
+Using device: cuda
+Loading data from excitement_0.25/d87.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 65.662827
+Epoch 20/50, Loss: 58.566709
+Epoch 30/50, Loss: 55.834149
+Epoch 40/50, Loss: 56.555557
+Early stopping at epoch 49/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d87.csv...
+Total runtime: 21.80 seconds (0.36 minutes)
+Done!
+  ✓ Completed
+
+[87/100] Processing: excitement_0.25/d88.csv
+  → Output: RESULTS/excitement_0.25_d88.csv
+Using device: cuda
+Loading data from excitement_0.25/d88.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 61.230838
+Epoch 20/50, Loss: 52.488220
+Epoch 30/50, Loss: 48.879874
+Epoch 40/50, Loss: 45.312315
+Epoch 50/50, Loss: 48.681337
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d88.csv...
+Total runtime: 22.19 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[88/100] Processing: excitement_0.25/d89.csv
+  → Output: RESULTS/excitement_0.25_d89.csv
+Using device: cuda
+Loading data from excitement_0.25/d89.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 74.518914
+Epoch 20/50, Loss: 70.079950
+Epoch 30/50, Loss: 72.345521
+Early stopping at epoch 33/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d89.csv...
+Total runtime: 15.10 seconds (0.25 minutes)
+Done!
+  ✓ Completed
+
+[89/100] Processing: excitement_0.25/d8.csv
+  → Output: RESULTS/excitement_0.25_d8.csv
+Using device: cuda
+Loading data from excitement_0.25/d8.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 64.345034
+Epoch 20/50, Loss: 56.584437
+Epoch 30/50, Loss: 51.492738
+Early stopping at epoch 37/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d8.csv...
+Total runtime: 17.04 seconds (0.28 minutes)
+Done!
+  ✓ Completed
+
+[90/100] Processing: excitement_0.25/d90.csv
+  → Output: RESULTS/excitement_0.25_d90.csv
+Using device: cuda
+Loading data from excitement_0.25/d90.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 61.596982
+Epoch 20/50, Loss: 57.670601
+Epoch 30/50, Loss: 55.536749
+Epoch 40/50, Loss: 55.843753
+Epoch 50/50, Loss: 53.329782
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d90.csv...
+Total runtime: 22.31 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[91/100] Processing: excitement_0.25/d91.csv
+  → Output: RESULTS/excitement_0.25_d91.csv
+Using device: cuda
+Loading data from excitement_0.25/d91.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 71.120978
+Epoch 20/50, Loss: 66.251762
+Epoch 30/50, Loss: 59.169019
+Epoch 40/50, Loss: 62.831919
+Early stopping at epoch 42/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d91.csv...
+Total runtime: 18.83 seconds (0.31 minutes)
+Done!
+  ✓ Completed
+
+[92/100] Processing: excitement_0.25/d92.csv
+  → Output: RESULTS/excitement_0.25_d92.csv
+Using device: cuda
+Loading data from excitement_0.25/d92.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 73.649320
+Epoch 20/50, Loss: 72.176950
+Epoch 30/50, Loss: 66.678220
+Epoch 40/50, Loss: 61.147496
+Early stopping at epoch 50/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d92.csv...
+Total runtime: 22.79 seconds (0.38 minutes)
+Done!
+  ✓ Completed
+
+[93/100] Processing: excitement_0.25/d93.csv
+  → Output: RESULTS/excitement_0.25_d93.csv
+Using device: cuda
+Loading data from excitement_0.25/d93.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 64.646852
+Epoch 20/50, Loss: 60.717355
+Epoch 30/50, Loss: 55.833512
+Early stopping at epoch 34/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d93.csv...
+Total runtime: 15.73 seconds (0.26 minutes)
+Done!
+  ✓ Completed
+
+[94/100] Processing: excitement_0.25/d94.csv
+  → Output: RESULTS/excitement_0.25_d94.csv
+Using device: cuda
+Loading data from excitement_0.25/d94.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 64.358625
+Epoch 20/50, Loss: 57.612320
+Epoch 30/50, Loss: 61.763892
+Early stopping at epoch 36/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d94.csv...
+Total runtime: 16.34 seconds (0.27 minutes)
+Done!
+  ✓ Completed
+
+[95/100] Processing: excitement_0.25/d95.csv
+  → Output: RESULTS/excitement_0.25_d95.csv
+Using device: cuda
+Loading data from excitement_0.25/d95.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 71.021545
+Epoch 20/50, Loss: 62.042997
+Epoch 30/50, Loss: 58.939636
+Epoch 40/50, Loss: 59.134524
+Early stopping at epoch 47/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d95.csv...
+Total runtime: 21.05 seconds (0.35 minutes)
+Done!
+  ✓ Completed
+
+[96/100] Processing: excitement_0.25/d96.csv
+  → Output: RESULTS/excitement_0.25_d96.csv
+Using device: cuda
+Loading data from excitement_0.25/d96.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 99.330133
+Epoch 20/50, Loss: 90.899540
+Early stopping at epoch 30/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d96.csv...
+Total runtime: 13.61 seconds (0.23 minutes)
+Done!
+  ✓ Completed
+
+[97/100] Processing: excitement_0.25/d97.csv
+  → Output: RESULTS/excitement_0.25_d97.csv
+Using device: cuda
+Loading data from excitement_0.25/d97.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 66.578337
+Epoch 20/50, Loss: 68.897129
+Epoch 30/50, Loss: 59.517044
+Early stopping at epoch 37/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d97.csv...
+Total runtime: 16.71 seconds (0.28 minutes)
+Done!
+  ✓ Completed
+
+[98/100] Processing: excitement_0.25/d98.csv
+  → Output: RESULTS/excitement_0.25_d98.csv
+Using device: cuda
+Loading data from excitement_0.25/d98.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 64.591748
+Epoch 20/50, Loss: 58.471138
+Epoch 30/50, Loss: 62.921602
+Epoch 40/50, Loss: 59.069615
+Epoch 50/50, Loss: 56.936089
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d98.csv...
+Total runtime: 22.24 seconds (0.37 minutes)
+Done!
+  ✓ Completed
+
+[99/100] Processing: excitement_0.25/d99.csv
+  → Output: RESULTS/excitement_0.25_d99.csv
+Using device: cuda
+Loading data from excitement_0.25/d99.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 79.606722
+Epoch 20/50, Loss: 80.923948
+Epoch 30/50, Loss: 71.240513
+Epoch 40/50, Loss: 72.424586
+Early stopping at epoch 47/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d99.csv...
+Total runtime: 21.18 seconds (0.35 minutes)
+Done!
+  ✓ Completed
+
+[100/100] Processing: excitement_0.25/d9.csv
+  → Output: RESULTS/excitement_0.25_d9.csv
+Using device: cuda
+Loading data from excitement_0.25/d9.csv...
+Data shape: (6250, 3)
+Train: (5000, 3), Test: (1250, 3)
+Creating sequences with lookback=50...
+Train sequences: X=(4950, 50, 3), y=(4950, 3)
+Test sequences: X=(1250, 50, 3), y=(1250, 3)
+Initializing TCN: layers=3, channels=64, dropout=0.1
+Model parameters: 25,539
+Training model...
+Epoch 10/50, Loss: 77.712537
+Epoch 20/50, Loss: 65.639685
+Epoch 30/50, Loss: 64.926192
+Epoch 40/50, Loss: 63.187691
+Early stopping at epoch 42/50
+Generating predictions with 100 MC samples...
+Predictions shape: (1250, 3, 100)
+Computing quantiles...
+Preparing output CSV...
+Saving results to RESULTS/excitement_0.25_d9.csv...
+Total runtime: 17.37 seconds (0.29 minutes)
+Done!
+  ✓ Completed
+
+==========================================
+Pipeline Complete!
+==========================================
+Processed: 100 datasets
+Results in: RESULTS/
+
+Files generated per dataset:
+  - *_d*.csv            (predictions + quantiles)
+
+To compute metrics, run your external metrics script:
+  python compute_metrics.py RESULTS/*.csv
+==========================================
