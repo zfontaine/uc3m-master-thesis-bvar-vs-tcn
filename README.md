@@ -1,10 +1,51 @@
-*last edit: 2026-02-15*
+*last edit: 2026-10-17*
 
 *Author's Alias: Zeno Fontaine*
 
 *Thesis Supervisors: Juan Miguel Marín Diazaraque and María Helena Lopes Moreira Da Veiga*
 
+**UPDATE: 2026-10-17**
+
+_On 27th February 2026, the thesis associated with this repository received a provisional
+grade of **10/10** from its defense committee and was nominated for Honours
+(*Matrícula de Honor*). Spanish university rules limit Honours to at most 5% of
+students, which for this degree meant a single award. For this reason, all nominated theses were
+reviewed together by the faculty before grades were finalised. The review concluded on
+9th October 2026: the grade of **10/10** was confirmed as final, and Honours were not
+awarded to this thesis._
+
 # UC3M Master Thesis: Bayesian VAR vs. Temporal Convolutional Networks: A Simulation Study on Forecasting Accuracy and Uncertainty Calibration
+
+## THESIS ABSTRACT
+
+This work aims to assess whether traditional Bayesian Vector Autoregression(BVAR)
+methods remain competitive, in terms of forecasting and uncertainty quantification, given
+recent advancements in deep learning algorithms for sequential data. To above question
+is explored via a simulation study that compares two statistical frameworks in their most
+common architectures: BVAR with Minnesota prior against Temporal Convolutional Net-
+works (TCN) with Monte Carlo Dropout. The simulation study generates 315 datasets,
+each containing 6,250 observations across three variables, based on a stochastic model
+that aims to simulate minute-level trading data with three regimes that are modelled using
+a proposed Excitement parameter. The design combines the following elements: Stochas-
+tic Volatility via Ornstein-Uhlenbeck process, Jump-Diffusion, Cholesky-based Correla-
+tion Structure, and Regime-Dependent Correlations via Excitement parameter. The study
+utilised a two-stage design: the first stage found the best-performing architecture of each
+model family across 15 datasets, the second stage compared the two best-perforimng ar-
+chitectures across 300 datasets.
+
+The results suggest that, despite being the older framework, BVAR dominated in ac-
+curacy (27-39% better RMSE, 38-53% better MAE), uncertainty calibration, and inter-
+val width (TCN intervals approximately 2.7 times wider). BVAR achieved near-nominal
+coverage whilst TCN remained severely overconservative due to MC Dropout being a
+Bayesian approximation method. Despite raw performance, the results are more nuanced.
+While BVAR remains competitive under suitable conditions and in cases where calibrated
+uncertainty is non-negotiable, TCN was approximately 9 times faster which makes it more
+suitable when computational speed and deployment over much larger datasets without
+strong structural assumptions takes priority.
+
+**Keywords:**  Bayesian VAR, Simulation Study, Minnesota Prior, Temporal Convolu-
+tional Networks, Monte Carlo Dropout, High-Frequency Forecasting, Forecasting Accu-
+racy, Uncertainty Callibration
 
 ## Description
 
@@ -27,19 +68,16 @@ folder.
 stages using corresponding *model* codes.
 Calculate metrics using code in **metrics_calculation** and **process_metrics.py**.
 
-
-The thesis file is a redacted version where personal,
-identifiable details have been removed, including the author's name on the
-front cover and dedication page. **This is the official repository associated with the master thesis.** The thesis
-file was submitted after the thesis defence (if the PDF is not here, the thesis defence was not yet finished).
-The work and code were produced under the author's alias "Zeno Fontaine", which is retained in the original document
-and is an established publishing alias.
+This is the author's official repository for the master's thesis. The thesis PDF is
+a redacted version from which personally identifiable details have been removed,
+including the author's legal name on the front cover and dedication page. The thesis
+and code were produced under the author's established publishing alias,
+Zeno Fontaine, which appears in the original document and is retained here.
 The author holds full copyright to all materials in this repository.
 
 The code is licensed under the GNU GPLv3 licence, while the published work,
 master thesis, and all graphics associated with it are licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
 International (CC BY-NC-ND 4.0) (https://creativecommons.org/licenses/by-nc-nd/4.0/). 
-
 
 If you use this work in your research, please cite:
 
