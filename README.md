@@ -1,3 +1,7 @@
+> **Note:** this is a mirror. The original repository for this thesis is at
+> <https://gitlab.com/zfontaine/uc3m-master-thesis-bvar-vs-tcn>
+
+---
 *last edit: 2026-10-17*
 
 *Author's Alias: Zeno Fontaine*
